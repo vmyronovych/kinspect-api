@@ -1,0 +1,12 @@
+# Ignore the Go build artifacts
+main
+
+# Ignore Go's build files
+*.exe
+*.test
+*.out
+
+# Ignore source code and Docker-related files
+Dockerfile
+.dockerignore
+README.md
