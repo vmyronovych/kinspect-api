@@ -10,7 +10,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	// Set content type to plain text
 	w.Header().Set("Content-Type", "text/plain")
 	// Respond with "Hello, World!"
-	fmt.Fprintf(w, "Hello, World! Upd v2")
+	fmt.Fprintf(w, "Hello, World! Upd v3")
 }
 
 // SetupRoutes registers the "/hello" route for this feature
