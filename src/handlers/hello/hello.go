@@ -17,7 +17,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 			latency := time.Duration((rand.Intn(5) + 5)) * time.Second
 			time.Sleep(latency)
 			w.WriteHeader(errorCode)
-			fmt.Fprintf(w, "Request has been failed")
+			fmt.Fprintf(w, "failed")
 			return
 		}
 	}
@@ -25,7 +25,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 	latency := time.Duration((rand.Intn(100) + 200)) * time.Millisecond
 	time.Sleep(latency)
 	w.WriteHeader(http.StatusOK) // 200 OK
-	fmt.Fprintf(w, "Success")
+	fmt.Fprintf(w, "success")
 }
 
 // SetupRoutes registers the "/hello" route for this feature
