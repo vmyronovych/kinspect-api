@@ -17,7 +17,7 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
 			latency := time.Duration((rand.Intn(5) + 5)) * time.Second
 			time.Sleep(latency)
 			w.WriteHeader(errorCode)
-			fmt.Fprintf(w, "failed")
+			fmt.Fprintf(w, "failed!")
 			return
 		}
 	}
